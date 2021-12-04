@@ -1,0 +1,33 @@
+server:
+    port: 8080
+    servlet:
+      context-path: /
+
+spring:
+  security:
+    user: 
+      name: user
+      password: pass
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://127.0.0.1:3306/shkim30
+    username: shkim30
+    password: sk570808
+  devtools:
+    livereload:
+      enabled: true
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+      force-request: true
+      force-response: true
+  redis:
+    host: 192.168.123.111
+    port: 6379   
+ 
